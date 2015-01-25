@@ -1,0 +1,68 @@
+  body {
+  padding: 50px;  
+  }
+  .shift {
+  position: relative; 
+  width: 796px;
+  }
+  .shift img {
+  width: 199px;
+  height: 131px;
+  display: block;
+  }
+  .gallery {
+  width: 956px;
+  overflow: hidden;
+  }
+  .gallery ul {
+  height: 130px;  
+  width: 9999px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: margin-left 1s;
+  }
+  .gallery ul li {
+  width: 199px;
+  height: 180px;
+  float: left;
+  margin-left: 18px;
+  border: 1px solid #AFEEEE;
+  padding: 10px 10px 10px 10px;  
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFA500;
+  }
+  .shift .arrow {
+  position: absolute;
+  top: 75px;
+  padding: 0px 6px 3px 2px;
+  font-size: 36px;
+  color: #FFFFFF;
+  background: #808080;
+  opacity: 0.8;
+  text-decoration: none;
+
+  }
+  .shift .right {
+  right: -159px;
+  }
+  .shift .left{          
+  left: 18px;
+  }
+  .shift .arrow:hover {
+  background: #696969;
+  cursor: pointer;  
+  }
+  .gallery ul li:hover {
+  border: 1px solid #48D1CC;      
+  }
+  .gallery a {
+  color: #20B2AA;
+  }
+  .gallery a:hover {
+  color: #008B8B;
+  }
+  .gallery ul img:hover {
+  cursor: pointer;      
+  }

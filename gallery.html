@@ -1,0 +1,82 @@
+
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+  </head> 
+  
+<body>
+<div class = "shift">
+  
+  <a href="#" class="arrow left" id="left">‹</a>
+  
+  <div class = "gallery">  
+  <ul id = "images">
+  <li>
+    <a href = 'http://content.oktogo.ru/%D0%A5%D0%B5%D0%BB%D1%8C%D1%81%D0%B8%D0%BD%D0%BA%D0%B8_t2547.aspx'><img src="images/dest_helsinki.jpg"><br>Хельсинки, Финляндия</a>
+  <br>123 отеля от 1300 руб.</li> 
+  <li><a href = 'http://content.oktogo.ru/%D0%9F%D1%80%D0%B0%D0%B3%D0%B0_t6557.aspx'><img src="images/dest_prague.jpg">
+  <br>Прага, Чехия</a>
+  <br>1526 отелей от 900 руб.</li>
+  <li><a href = 'http://content.oktogo.ru/%D0%9F%D0%B0%D1%82%D1%82%D0%B0%D0%B9%D1%8F_t25338.aspx'><img src="images/dest_pattaya.jpg">
+  <br>Паттайя, Таиланд</a>
+  <br>590 отелей от 500 руб.</li>
+  <li><a href = 'http://content.oktogo.ru/%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA_t20857.aspx'><img src="images/dest_ny.jpg">
+  <br>Нью-Йорк, США</a>
+  <br>810 отелей от 2000 руб.</li>
+  <li><a href = 'http://content.oktogo.ru/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_t12153.aspx'><img src="images/dest_moscow.jpg">
+  <br>Москва, Россия</a>
+  <br>1717 отелей от 600 руб.</li>
+  <li><a href = 'http://content.oktogo.ru/%D0%9C%D0%B0%D0%B9%D0%B0%D0%BC%D0%B8_%D0%91%D0%B8%D1%87_t17881.aspx'><img src="images/dest_miami_beach.jpg">
+  <br>Майами Бич, США</a>
+  <br>354 отеля от 1498 руб.</li>
+  <li><a href = 'http://content.oktogo.ru/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C_t12127.aspx'><img src="images/dest_kazan.jpg">
+  <br>Казань, Россия</a>
+  <br>173 отеля от 900 руб.</li>
+  <li><a href = 'http://content.oktogo.ru/%D0%A1%D1%82%D0%B0%D0%BC%D0%B1%D1%83%D0%BB_t2764.aspx'><img src="images/dest_istanbul.jpg">
+  <br>Стамбул, Турция</a>
+  <br>2171 отель от 642 руб.</li>
+  <li><a href = 'http://content.oktogo.ru/%D0%AD%D0%B9%D0%BB%D0%B0%D1%82_t2970.aspx'><img src="images/dest_eliat.jpg">
+  <br>Эйлат, Израиль</a>
+  <br>109 отелей от 1450 руб.</li>
+  <li><a href = 'http://content.oktogo.ru/%D0%9A%D0%B0%D0%BD%D0%BA%D1%83%D0%BD_t4377.aspx'><img src="images/dest_cancun.jpg">
+  <br>Канкун, Мексика</a>
+  <br>245 отелей от 900 руб.</li> 
+  </ul>  
+  </div>
+  
+  <a href="#" class="arrow right" id="right">&#8250; </a> 
+  
+</div> 
+
+    <script>
+var width = 239;
+var count = 4;
+
+var ul = document.getElementById('images');
+var imgs = ul.getElementsByTagName('li');
+
+var position = 0;
+
+document.getElementById('left').onclick = function() {
+   if(position>=0) return false;
+  position = Math.min(position + width*count, 0);
+ul.style.marginLeft = position + 'px';
+  return false;
+};
+
+document.getElementById('right').onclick = function() {
+  if(position <= -width*(imgs.length-count)) return false;
+  position = Math.max(position - width*count, -width*(imgs.length-count));
+ul.style.marginLeft = position + 'px';
+  return false;
+};
+    
+    </script>
+
+</body>
+</html>
+
+
+
